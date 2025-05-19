@@ -669,13 +669,17 @@ const FrontlinerCallingPage = () => {
           <>
             <Reports report={frontlinerReport} />
             {/* Two colorful cards */}
+            <h2 className="mb-5 mt-10 text-lg font-bold dark:text-white">
+          Frontliner {frontlinerName} Registration Report & Assigned Calling Report
+        </h2>
+
             <div className="mb-8 grid grid-cols-1 gap-6 md:grid-cols-2">
               <div
                 onClick={navigateToRegistration}
                 className="cursor-pointer rounded-lg bg-gradient-to-r from-blue-500 to-blue-600 p-6 shadow-lg transition-all hover:scale-105 hover:shadow-xl"
               >
                 <h3 className="mb-3 text-xl font-semibold text-white">
-                  Frontliner {frontlinerName} Registration report  
+                  Frontliner {frontlinerName} Registration Report  
                 </h3>
                 <p className="text-blue-100">
                   Click to view registration details and information
@@ -687,7 +691,7 @@ const FrontlinerCallingPage = () => {
                 className="cursor-pointer rounded-lg bg-gradient-to-r from-green-500 to-green-600 p-6 shadow-lg transition-all hover:scale-105 hover:shadow-xl"
               >
                 <h3 className="mb-3 text-xl font-semibold text-white">
-                  Frontliner {frontlinerName} Assigned Calling report  
+                  Frontliner {frontlinerName} Assigned Calling Report  
                 </h3>
                 <p className="text-green-100">
                   Click to view assigned callings and reports
